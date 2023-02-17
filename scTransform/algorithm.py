@@ -115,7 +115,7 @@ def vst(
 
     model_pars_fit, outliers = step2.reg_model_pars(
         model_pars, genes_log_gmean_step1, genes_log_gmean, cell_attr,
-        batch_var, umi, bw_adjust, gmean_eps)
+        batch_var, bw_adjust, gmean_eps)
 
     residuals = step3.compute_residuals(
         umi, model_matrix, model_pars_fit, res_clip_range, min_variance)
